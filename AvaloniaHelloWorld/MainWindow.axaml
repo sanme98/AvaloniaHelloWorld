@@ -1,0 +1,36 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:svg="clr-namespace:Avalonia.Svg.Skia;assembly=Avalonia.Svg.Skia"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="450"
+        x:Class="AvaloniaHelloWorld.MainWindow"
+        Title="Avalonia Hello World"
+		ExtendClientAreaToDecorationsHint="True"
+		Icon="/Assets/avaloniaui_logo.ico"
+	>
+	<ScrollViewer Padding="0,30,0,0">
+		<StackPanel Spacing="25" VerticalAlignment="Center">
+
+			<Image Height="200" Source="{SvgImage /Assets/dotnet_bot.svg}"/>
+
+			<Label
+			   Content="Hello, World!"
+			   FontSize="32"
+			   HorizontalContentAlignment="Center">
+			</Label>
+
+			<Label
+                Content="Welcome to .NET Avalonia UI"
+                FontSize="18"
+                HorizontalContentAlignment="Center" />
+
+			<Button
+                x:Name="CounterBtn"
+                Content="Click me"
+				Click="OnCounterClick"
+				HorizontalAlignment="Center"/>
+
+		</StackPanel>
+	</ScrollViewer>
+</Window>
